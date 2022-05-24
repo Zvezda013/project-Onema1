@@ -1,5 +1,32 @@
-//	var money = +prompt("Ваш бюджет на месяц"),
-//	time = prompt("введите дату в формате YYYY-MM-DD");
+alert('helli');
+var	open = document.getElementById('start'),
+	budget = document.getElementsByClassName('result-item'),
+	input = document.getElementsByClassName('expenses-item'),
+	btn = document.getElementsByTagName('button')[0],
+	//btn1 = document.getElementsByTagName('button')[1],
+	btn2 = document.getElementsByTagName('button')[2],
+	qsa = document.querySelectorAll('.optionalexpenses-item');
+	
+
+	//selector
+var label = document.querySelector('.choose-income'),
+	checkbox = document.querySelector('#savings'),
+	checkSumma = document.querySelector('.choose-sum'),
+	checkProcent = document.querySelector('.choose-percent'),
+	checkYear = document.querySelector('.year-value'),
+	checkMonth = document.querySelector('.month-value'),
+	checkDay = document.querySelector('day-value');
+	// tets
+var but1 = document.getElementsByClassName('expenses-item-btn');
+console.log(budget);
+console.log(input);
+console.log(btn);
+console.log(qsa);
+console.log(label);
+but1.addEventListener('click', function(){
+	alert('Нажал');
+});
+
 function start(){
 	money = +prompt("Ваш бюджет на месяц");
 	time = prompt("введите дату в формате YYYY-MM-DD");
